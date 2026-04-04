@@ -4,9 +4,9 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/cloud_user?useSSL=false
     username: root
-    password: 123
+    password: wsm666..
     driver-class-name: com.mysql.jdbc.Driver
-mybatis:
+mybatis-plus:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
     map-underscore-to-camel-case: true
