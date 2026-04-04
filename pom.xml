@@ -10,6 +10,7 @@
     <modules>
         <module>user-service</module>
         <module>order-service</module>
+        <module>eureka-server</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -28,6 +29,7 @@
         <spring-cloud.version>Hoxton.SR10</spring-cloud.version>
         <mysql.version>5.1.47</mysql.version>
         <mybatis.version>2.1.1</mybatis.version>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <dependencyManagement>
@@ -50,6 +52,15 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>3.1.2</version>
+            </dependency>
+            <!-- 阿里云 -->
+            <!--nacos管理依赖-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.5.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
