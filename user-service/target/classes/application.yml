@@ -1,15 +1,8 @@
 server:
   port: 8081
 spring:
-  application:
-    name: userservice # 服务名
-  cloud:
-    nacos: # nacos地址
-      server-addr: localhost:8848
-      discovery:
-        cluster-name: HZ
   datasource:
-    url: jdbc:mysql://localhost:3306/cloud_user?useSSL=false
+    url: jdbc:mysql://localhost:3306/cloud_user?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8
     username: root
     password: wsm666..
     driver-class-name: com.mysql.jdbc.Driver

@@ -1,0 +1,20 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: user-service # 路由id
+          uri: lb://userservice  # 负载均衡 服务名
+          predicates: # 路由断言
+            - Path=/user/**       # 匹配地址
+        - id: order-service # 路由id
+          uri: lb://orderservice  # 负载均衡 服务名
+          predicates: # 路由断言
+            - Path=/order/**
+            - Before=2020-05-01T00:00:00Z
+

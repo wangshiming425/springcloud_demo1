@@ -29,7 +29,7 @@ logging:
       #defaultZone: http://localhost:10086/eureka
 userservice:
   ribbon:
-    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule # 负载均衡
 ribbon:
   eager-load:
     enabled: true

@@ -1,5 +1,6 @@
 package cn.itcast.order.pojo;
 
+import cn.itcast.feign.pojo.User;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
